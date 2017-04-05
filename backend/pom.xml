@@ -9,10 +9,10 @@
 		<version>1.0-SNAPSHOT</version>
 	</parent>
 
-	<groupId>com.ethan</groupId>
+	<!--<groupId>com.ethan</groupId>-->
 	<artifactId>backend</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<!--<version>0.0.1-SNAPSHOT</version>-->
+	<!--<packaging>jar</packaging>-->
 
 	<name>backend</name>
 	<description>Demo project for Spring Boot</description>
