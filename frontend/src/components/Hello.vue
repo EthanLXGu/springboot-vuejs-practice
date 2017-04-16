@@ -34,18 +34,7 @@
 
 <script>
 import qs from 'qs'
-//var instance = this.axios.create({
-//  baseURL: '/user',
-//  timeout: 1000,
-//  transformRequest: [function (data) {
-//    // Do whatever you want to transform the data
-//    return data
-//  }],
-//  data: {
-//    userName: 'Ethan',
-//    password: '2222'
-//  }
-//})
+
 export default {
   name: 'hello',
   data () {
@@ -59,50 +48,10 @@ export default {
   methods: {
     testClick: function () {
       this.axios.get('/food').then(res => {
-//        this.foodList = res.data.result.list
         this.code = res.data.code
-//        console.log(this.foodList)
       })
     },
-//    testPost: function () {
-////      this.axios.post('/user', {
-////        userName: 'Ethan',
-////        password: 2222
-////      })
-////        .then(res => {
-////          console.log(res)
-////        })
-////        .then(error => {
-////          console.log(error)
-////        })
-//      const data = new FormData();
-//      data.append("userName", 'Ethan')
-//      this.axios({
-//        method: 'post',
-//        url: '/user',
-//        data:
-////          qs.stringify({
-////            userName: 'Ethan1',
-////            name: 'Ethan2'
-////          }),
-//          {
-//            userName: 'Ethan',
-//            password: 2222
-//          },
-////        params: {
-////          name: 'Ethan1'
-////        },
-//        transformRequest: [function (data) {
-//          // Do whatever you want to transform the data
-//          return qs.stringify(data)
-//        }],
-//        headers: {'X-Requested-With': 'XMLHttpRequest',
-//                  'Content-Type': 'application/x-www-form-urlencoded'}
-//      })
-//        .then(res => {
-//          console.log(res)
-//        })
-//    },
+
     testGet: function () {
       this.axios({
         method: 'get',
@@ -179,7 +128,7 @@ export default {
         .then(error => {
           console.log(error)
         })
-    },
+    }
   }
 }
 </script>
