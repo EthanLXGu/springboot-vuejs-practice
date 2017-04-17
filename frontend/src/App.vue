@@ -1,14 +1,17 @@
 <template>
   <div id="app">
+    <top-bar></top-bar>
     <img src="./assets/logo.png">
     <router-view></router-view>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'app'
-}
+  import TopBar from './components/TopBar'
+  export default {
+    components: {TopBar},
+    name: 'app'
+  }
 </script>
 
 <style>
@@ -18,6 +21,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: -10px;
 }
 </style>
